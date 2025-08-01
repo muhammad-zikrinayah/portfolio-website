@@ -6,7 +6,7 @@ import ScrollWrapper from "./assets/ScrollWrapper";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Gallery from "./components/gallery";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
