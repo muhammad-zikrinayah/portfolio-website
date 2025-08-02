@@ -145,7 +145,7 @@ export default function About() {
         data-scroll
         data-scroll-speed="0"
       >
-        <div className="flex flex-col gap-y-16 items-start justify-items-start w-full">
+        <div className="flex flex-col gap-y-16 items-start justify-items-start w-full xl:pr-24">
           <div className="flex flex-col gap-y-3 items-start">
             <SubtitleBold text="About" color="text-neutral-500" />
             <div className="max-w-48 items-start">
@@ -203,9 +203,9 @@ export default function About() {
         <div className="realtive">
           
         </div>
-        <div className="size-80 2xl:size-125 xl:size-120 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
-        <div className="size-80 2xl:size-125 xl:size-120 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
-        <div className="size-80 2xl:size-125 xl:size-120 bg-primary-container rounded-3xl absolute">
+        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
+        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
+        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl absolute">
           <img
             className=" brightness-115 saturate-95 contrast-95 rounded-3xl border-2 border-primary-main"
             src={IMAGES.profileAbout}
