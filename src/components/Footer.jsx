@@ -1,9 +1,7 @@
 import {
   BodyNormal,
-  SubtitleBold,
   SubtitleMedium,
   TextHeadingLarge,
-  TextHeadingSmall,
 } from "./widgets/CustomText";
 
 export default function Footer() {

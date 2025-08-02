@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
-import CustomIcons from "./components/widgets/CustomIcons";
+import CustomIcons from "./CustomIcons";
 
 export function ModalSkill({ isOpen, onClose, title, children }) {
   useEffect(() => {}, [isOpen]);

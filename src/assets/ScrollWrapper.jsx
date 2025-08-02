@@ -7,19 +7,13 @@ const ScrollWrapper = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Function to handle window resize
     const handleResize = () => {
-      // Define your mobile breakpoint, e.g., 768px for Tailwind's 'md'
       setIsMobile(window.innerWidth < 768);
     };
-
-    // Set initial state
     handleResize();
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

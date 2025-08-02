@@ -1,4 +1,3 @@
-// components/Skill.jsx
 import { useState } from "react";
 import { DefaultCard } from "./widgets/CustomCard";
 import {
@@ -7,7 +6,7 @@ import {
   TextHeadingLarge,
   TextHeadingSmall,
 } from "./widgets/CustomText";
-import { ModalSkill } from "../Modal";
+import { ModalSkill } from "./widgets/Modal";
 import { skillsData } from "../data/skillData";
 
 export default function Skill() {

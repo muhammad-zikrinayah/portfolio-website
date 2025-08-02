@@ -1,4 +1,4 @@
-import { DefaultCard, SocialCard } from "./widgets/CustomCard";
+import { SocialCard } from "./widgets/CustomCard";
 import { DefaultForm } from "./widgets/CustomForm";
 import {
   BodyNormal,

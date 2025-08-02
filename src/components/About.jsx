@@ -29,10 +29,6 @@ export default function About() {
       title: "SMK Raden Umar Said Kudus",
       description: "Software Engineering",
     },
-    {
-      year: "2019 - 2022",
-      title: "MTsN 1 Sumbawa Barat",
-    },
   ];
 
   const experienceData = [
@@ -43,9 +39,9 @@ export default function About() {
     },
     {
       year: "2023 - 2024",
-      title: "SMK Raden Umar Said",
+      title: "SMK Raden Umar Said Kudus",
       description:
-        "Final Project: E-Commerce Application Development, UI/UX Designer, Team Management & Front-End Developer",
+        "Final Project: E-Commerce Application Development, UI/UX Designer, Team Manager & Front-End Developer",
     },
   ];
 

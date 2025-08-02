@@ -4,7 +4,6 @@ import {
   BodyNormal,
   SubtitleBold,
   SubtitleMedium,
-  SubtitleNormal,
   TextHeadingLarge,
   TextHeadingMedium,
 } from "./widgets/CustomText";
@@ -12,7 +11,7 @@ import { DefaultButton, TabsButton } from "./widgets/CustomButton";
 import { ProjectCard } from "./widgets/CustomCard";
 import Project from "../data/projectData";
 import IMAGES from "../data/images";
-import { ModalProject } from "../Modal";
+import { ModalProject } from "./widgets/Modal";
 
 const tabs = [
   { id: "all", label: "All" },

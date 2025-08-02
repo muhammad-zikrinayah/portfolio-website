@@ -1,29 +1,24 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-// Assuming BodyNormal is a valid component, it's kept as is.
 import { BodyNormal } from "./CustomText";
 
 export function DefaultForm({}) {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
-  // State to hold validation errors for each field
   const [errors, setErrors] = useState({});
   const maxLength = 512;
 
   const form = useRef();
 
-  // Function to validate the form fields
   const validateForm = () => {
     let newErrors = {};
     let isValid = true;
 
-    // Validate Name field
     if (!form.current["form-name"].value) {
       newErrors.name = "Name cannot be empty.";
       isValid = false;
     }
 
-    // Validate Email field using a simple regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!form.current["form-email"].value) {
       newErrors.email = "Email cannot be empty.";
@@ -33,13 +28,11 @@ export function DefaultForm({}) {
       isValid = false;
     }
 
-    // Validate Message field
     if (!form.current["form-message"].value) {
       newErrors.message = "Message cannot be empty.";
       isValid = false;
     }
 
-    // Update the state with the new errors
     setErrors(newErrors);
     return isValid;
   };

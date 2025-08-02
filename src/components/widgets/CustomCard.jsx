@@ -7,7 +7,6 @@ import * as GoIcons from "react-icons/go";
 import * as IoIcons from "react-icons/io5";
 import { DefaultButton } from "./CustomButton";
 import { BodyNormal, SubtitleNormal } from "./CustomText";
-import IMAGES from "../../data/images";
 
 const iconPacks = {
   fa: FaIcons,
@@ -187,7 +186,7 @@ export function ProjectCard({
         backgroundHover="bg-neutral-50"
         className="cursor-pointer w-fit"
         labelStyle="underline"
-        onClick={onClick} // Teruskan prop onClick
+        onClick={onClick}
       />
     </div>
   );
