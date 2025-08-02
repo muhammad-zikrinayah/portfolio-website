@@ -1,5 +1,5 @@
 import { useState } from "react";
-import IMAGES from "../images/images";
+import IMAGES from "../data/images";
 import {
   BodyMedium,
   BodyNormal,

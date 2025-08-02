@@ -1,4 +1,4 @@
-import IMAGES from "../images/images";
+import IMAGES from "./images";
 
 const designProjects = [
   {

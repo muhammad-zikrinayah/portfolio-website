@@ -7,7 +7,7 @@ import * as GoIcons from "react-icons/go";
 import * as IoIcons from "react-icons/io5";
 import { DefaultButton } from "./CustomButton";
 import { BodyNormal, SubtitleNormal } from "./CustomText";
-import IMAGES from "../../images/images";
+import IMAGES from "../../data/images";
 
 const iconPacks = {
   fa: FaIcons,

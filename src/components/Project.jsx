@@ -11,7 +11,7 @@ import {
 import { DefaultButton, TabsButton } from "./widgets/CustomButton";
 import { ProjectCard } from "./widgets/CustomCard";
 import Project from "../data/projectData";
-import IMAGES from "../images/images";
+import IMAGES from "../data/images";
 import { ModalProject } from "../Modal";
 
 const tabs = [

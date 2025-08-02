@@ -4,11 +4,10 @@ import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isTop, setIsTop] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State untuk mengelola menu mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Periksa apakah window.scrollY lebih besar dari 0
       setIsTop(window.scrollY === 0);
     };
 
@@ -25,8 +24,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-colors ease-in duration-300 ${
         isTop ? "bg-transparent" : "bg-neutral-50"
+        
       }`}
     >
       <div className="flex px-5 lg:px-60 py-5 lg:py-16 justify-between items-center relative">

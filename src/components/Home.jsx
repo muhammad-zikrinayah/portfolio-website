@@ -1,4 +1,4 @@
-import IMAGES from "../images/images";
+import IMAGES from "../data/images";
 import { DefaultButton, IconButton } from "./widgets/CustomButton";
 import CustomIcons from "./widgets/CustomIcons";
 import {
