@@ -46,7 +46,7 @@ const ScrollWrapper = ({ children }) => {
   }, [isMobile]); 
 
   return (
-    <div data-scroll-container ref={containerRef} className="p-0 scroll-smooth relative">
+    <div data-scroll-container ref={containerRef} className="p-0 relative">
       {children}
     </div>
   );
