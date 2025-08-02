@@ -79,6 +79,12 @@
   --spacing-560: 35rem;
   --spacing-600: 37.5rem;
 
+
+  --text-xs--line-height: 1.25rem;
+  
+  --text-2xs: 0.625rem;
+  --text-2xs--line-height: 1rem; 
+
   @keyframes loop-scroll-left {
     from {
       transform: translateX(0);

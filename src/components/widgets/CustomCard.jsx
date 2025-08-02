@@ -161,7 +161,7 @@ export function ProjectCard({
         flex flex-col
         rounded-lg
         justify-end
-        gap-y-5 ${className} ${paddingX} ${paddingY} ${gap}
+        gap-y-16 lg:gap-y-5 ${className} ${paddingX} ${paddingY} ${gap}
       `}
     >
       <div className="flex flex-col items-start gap-y-3">

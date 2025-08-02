@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DefaultCard } from "./widgets/CustomCard";
 import {
+  BodyMedium,
   BodyNormal,
   SubtitleBold,
   TextHeadingLarge,
@@ -74,9 +75,11 @@ export default function Skill() {
         onClose={closeModal}
         title={modalContent.title}
       >
-        <p className="leading-relaxed text-neutral-800">
-          {modalContent.description}
-        </p>
+        <BodyMedium
+          text={modalContent.description}
+          color="text-neutral-500"
+          className="mb-3 leading-relaxed lg:font-normal"
+        />
       </ModalSkill>
     </section>
   );

@@ -74,7 +74,7 @@ export function DefaultForm({}) {
         <div className="mb-16">
           <label
             htmlFor="name"
-            className="font-semibold text-xl text-neutral-700"
+            className="font-semibold text-lg text-neutral-700"
           >
             Name
           </label>
@@ -83,7 +83,7 @@ export function DefaultForm({}) {
             type="text"
             name="form-name"
             placeholder="Insert your name"
-            className="mt-3 w-full text-neutral-600 rounded-lg p-16 font-semibold text-base placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
+            className="mt-3 w-full text-neutral-600 rounded-lg p-16 font-semibold text-sm placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
             required
           />
           {errors.name && (
@@ -94,7 +94,7 @@ export function DefaultForm({}) {
         <div className="mb-16">
           <label
             htmlFor="email"
-            className="font-semibold text-xl text-neutral-700"
+            className="font-semibold text-lg text-neutral-700"
           >
             Email
           </label>
@@ -103,7 +103,7 @@ export function DefaultForm({}) {
             type="email"
             name="form-email"
             placeholder="john.doe@company.com"
-            className="mt-3 w-full text-neutral-600 rounded-lg p-16 font-semibold text-base placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
+            className="mt-3 w-full text-neutral-600 rounded-lg p-16 font-semibold text-sm placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
             required
           />
           {errors.email && (
@@ -114,7 +114,7 @@ export function DefaultForm({}) {
         <div className="mb-16">
           <label
             htmlFor="message"
-            className="font-semibold text-xl text-neutral-700"
+            className="font-semibold text-lg text-neutral-700"
           >
             Message
           </label>
@@ -127,10 +127,10 @@ export function DefaultForm({}) {
               placeholder="Write your thoughts here..."
               value={message}
               onChange={handleMessageChange}
-              className="resize-none p-16 overflow-y-auto max-h-72 h-72 min-h-72 mt-3 w-full text-neutral-600 rounded-lg font-semibold text-base placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
+              className="resize-none p-16 overflow-y-auto max-h-60 h-60 min-h-60 lg:max-h-72 lg:h-72 lg:min-h-72 mt-3 w-full text-neutral-600 rounded-lg font-semibold text-sm placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
               required
             />
-            <div className="absolute bottom-16 right-16 text-sm font-normal text-neutral-500">
+            <div className="absolute bottom-16 right-16 text-xs lg:text-sm font-semibold lg:font-normal text-neutral-500">
               <span>{message.length}</span> / <span>{maxLength}</span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export function DefaultForm({}) {
         <div className="flex flex-col lg:flex-row w-full lg:gap-x-3 gap-y-3 lg:gap-y-0 items-center">
           <button
             type="submit"
-            className="px-32 py-16 justify-center flex rounded-xl w-full lg:w-fit font-semibold text-l bg-primary-main hover:bg-primary-hover text-neutral-50 cursor-pointer"
+            className="px-32 py-16 justify-center flex rounded-lg lg:rounded-xl w-full lg:w-fit font-semibold text-l bg-primary-main hover:bg-primary-hover text-neutral-50 cursor-pointer"
           >
             Submit
           </button>

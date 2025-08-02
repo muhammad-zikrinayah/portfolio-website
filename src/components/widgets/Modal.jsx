@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
 import CustomIcons from "./CustomIcons";
+import { TextHeadingMedium, TextHeadingSmall } from "./CustomText";
 
 export function ModalSkill({ isOpen, onClose, title, children }) {
   useEffect(() => {}, [isOpen]);
@@ -15,7 +16,7 @@ export function ModalSkill({ isOpen, onClose, title, children }) {
       >
         <div className="p-24 gap-y-16 flex flex-col">
           <div className="flex items-center justify-between">
-            <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+            <TextHeadingSmall text={title}/>
             <button
               type="button"
               className="text-primary-main cursor-pointer hover:text-neutral-50 bg-primary-surface rounded-lg p-2 hover:bg-primary-main"

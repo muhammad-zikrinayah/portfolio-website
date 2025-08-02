@@ -134,8 +134,8 @@ export default function Projects() {
               className={`${
                 activeTab === tab.id ? "cursor-auto" : "cursor-pointer"
               }`}
-              paddingY="py-16"
-              paddingX="px-24"
+              paddingY="py-12 lg:py-16"
+              paddingX="px-16 lg:px-24"
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               label={tab.label}
@@ -143,7 +143,7 @@ export default function Projects() {
               backgroundColor={`${
                 activeTab === tab.id ? "bg-primary-main" : "bg-neutral-50"
               }`}
-              cornerRadius="rounded-2xl"
+              cornerRadius="rounded-lg lg:rounded-2xl"
               backgroundHover={`${
                 activeTab === tab.id
                   ? "hover:bg-primary-main"
@@ -168,11 +168,14 @@ export default function Projects() {
       >
         <img
           src={modalContent.image}
-          className="h-91 object-cover w-full mb-3 rounded-lg"
+          className="h-60 lg:h-90 object-cover w-full mb-3 rounded-lg border-2 border-neutral-200"
         />
-        <p className="leading-relaxed text-neutral-600 mb-3">
-          {modalContent.description}
-        </p>
+        <BodyNormal
+        text={modalContent.description}
+        color="text-neutral-500"
+        className="mb-3 leading-relaxed"
+        />
+        
         <a
           href={modalContent.link}
           target="_blank"

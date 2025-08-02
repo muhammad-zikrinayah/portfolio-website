@@ -28,7 +28,7 @@ export default function Gallery() {
     <section
       data-scroll-section
       id="gallery"
-      className="bg-neutral-50 h-fit w-full flex flex-col lg:py-128 justify-center items-center gap-y-9"
+      className="bg-neutral-50 h-fit w-full flex flex-col py-24 lg:py-128 justify-center items-center gap-y-9"
     >
       <div
         className="flex flex-col gap-y-3 items-center"

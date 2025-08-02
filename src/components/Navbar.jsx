@@ -30,7 +30,7 @@ export default function Navbar() {
       }`}
     >
       <div className="flex px-5 lg:px-60 py-5 lg:py-16 justify-between items-center relative">
-        <div className="flex w-fit gap-x-2 z-50">
+        <div className="flex w-fit gap-x-1 lg:gap-x-2 z-50">
           <TextHeadingLarge text="Zikri" />
           <TextHeadingLarge text="UI" color="text-primary-main" />
         </div>
@@ -58,32 +58,32 @@ export default function Navbar() {
           className={`
             fixed lg:static top-0 left-0 w-full h-full lg:h-auto 
             flex flex-col lg:flex-row items-center justify-center lg:justify-end
-            bg-neutral-50/70 backdrop-blur-md lg:backdrop-blur-none lg:bg-transparent
+            bg-neutral-50/80 backdrop-blur-md lg:backdrop-blur-none lg:bg-transparent
             transition-all duration-300 transform 
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             lg:translate-x-0
           `}
         >
           <ul
-            className={`flex flex-col lg:flex-row gap-y-5 lg:gap-y-0 lg:gap-x-9 text-center`}
+            className={`flex flex-col lg:flex-row gap-y-7 lg:gap-y-0 lg:gap-x-9 text-center`}
           >
             <li>
-              <LinkSemiBold text="Home" href="#home" />
+              <LinkSemiBold text="Home" href="#home" onClick={toggleMenu} />
             </li>
             <li>
-              <LinkSemiBold text="About" href="#about" />
+              <LinkSemiBold text="About" href="#about" onClick={toggleMenu}/>
             </li>
             <li>
-              <LinkSemiBold text="Skill" href="#skill" />
+              <LinkSemiBold text="Skill" href="#skill" onClick={toggleMenu}/>
             </li>
             <li>
-              <LinkSemiBold text="Project" href="#project" />
+              <LinkSemiBold text="Project" href="#project" onClick={toggleMenu}/>
             </li>
             <li>
-              <LinkSemiBold text="Gallery" href="#gallery" />
+              <LinkSemiBold text="Gallery" href="#gallery" onClick={toggleMenu}/>
             </li>
             <li>
-              <LinkSemiBold text="Contact" href="#contact" />
+              <LinkSemiBold text="Contact" href="#contact" onClick={toggleMenu}/>
             </li>
           </ul>
         </div>
