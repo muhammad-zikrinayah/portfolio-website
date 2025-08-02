@@ -51,7 +51,23 @@ export default function Projects() {
     switch (activeTab) {
       case "all":
         return (
-          <div className=" flex flex-col gap-y-24 lg:gap-y-0 lg:grid lg:grid-cols-3 lg:gap-9 items-start w-full">
+          <div
+            className="
+          flex
+          flex-col
+          gap-y-24
+          2xl:gap-y-0
+          xl:gap-y-0
+          2xl:grid
+          xl:grid
+          2xl:grid-cols-3
+          xl:grid-cols-3
+          2xl:gap-9
+          xl:gap-24
+          items-start
+          w-full
+          "
+          >
             {data.map((item) => (
               <ProjectCard
                 key={item.id}
@@ -72,7 +88,22 @@ export default function Projects() {
         );
       case "design":
         return (
-          <div className=" flex flex-col gap-y-24 lg:gap-y-0 lg:grid lg:grid-cols-3 lg:gap-9 items-start w-full">
+          <div
+            className="
+          flex
+          flex-col
+          gap-y-24
+          2xl:gap-y-0
+          xl:gap-y-0
+          2xl:grid
+          xl:grid
+          2xl:grid-cols-3
+          xl:grid-cols-3
+          2xl:gap-9
+          xl:gap-24
+          items-start
+          w-full"
+          >
             {data.map((item) => (
               <ProjectCard
                 key={item.id}
@@ -114,7 +145,20 @@ export default function Projects() {
     <section
       data-scroll-section
       id="project"
-      className="bg-neutral-50 h-fit flex flex-col px-5 lg:px-60 py-40 justify-center gap-y-24 lg:gap-y-24"
+      className="*
+      bg-neutral-50
+      h-fit
+      flex
+      flex-col
+      px-5
+      2xl:px-60
+      xl:px-14
+      py-40
+      justify-center
+      gap-y-24
+      2xl:gap-y-24
+      xl:gap-y-24
+      "
     >
       <div
         className="flex flex-col gap-y-3 items-center"
@@ -127,15 +171,15 @@ export default function Projects() {
         </div>
         <TextHeadingLarge text="My Latest Project" />
       </div>
-      <div className=" flex flex-col gap-y-9 items-center">
+      <div className=" flex flex-col gap-y-9 items-center w-full">
         <div className="flex gap-x-5" data-scroll data-scroll-speed="0.01">
           {tabs.map((tab) => (
             <TabsButton
               className={`${
                 activeTab === tab.id ? "cursor-auto" : "cursor-pointer"
               }`}
-              paddingY="py-12 lg:py-16"
-              paddingX="px-16 lg:px-24"
+              paddingY="py-12 2xl:py-16 xl:py-16"
+              paddingX="px-16 2xl:px-24 xl:px-24"
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               label={tab.label}
@@ -143,7 +187,7 @@ export default function Projects() {
               backgroundColor={`${
                 activeTab === tab.id ? "bg-primary-main" : "bg-neutral-50"
               }`}
-              cornerRadius="rounded-lg lg:rounded-2xl"
+              cornerRadius="rounded-lg 2xl:rounded-2xl xl:rounded-xl"
               backgroundHover={`${
                 activeTab === tab.id
                   ? "hover:bg-primary-main"
@@ -168,19 +212,15 @@ export default function Projects() {
       >
         <img
           src={modalContent.image}
-          className="h-60 lg:h-90 object-cover w-full mb-3 rounded-lg border-2 border-neutral-200"
+          className="h-60 2xl:h-90 xl:h-90 object-cover w-full mb-3 rounded-lg border-2 border-neutral-200"
         />
         <BodyNormal
-        text={modalContent.description}
-        color="text-neutral-500"
-        className="mb-3 leading-relaxed"
+          text={modalContent.description}
+          color="text-neutral-500"
+          className="mb-3 leading-relaxed"
         />
-        
-        <a
-          href={modalContent.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <a href={modalContent.link} target="_blank" rel="noopener noreferrer">
           <DefaultButton
             textcomponent={BodyMedium}
             label="View Detail"

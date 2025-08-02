@@ -90,13 +90,13 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(-320%);
+      transform: translateX(-220%);
     }
   }
 
   @keyframes loop-scroll-right {
     from {
-      transform: translateX(-320%);
+      transform: translateX(-220%);
     }
     to {
       transform: translateX(0);

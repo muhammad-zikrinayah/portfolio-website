@@ -31,7 +31,23 @@ export default function Skill() {
     <section
       data-scroll-section
       id="skill"
-      className="bg-neutral-50 h-fit lg:h-screen flex flex-col px-5 lg:px-60 py-28 lg:py-40 items-center justify-center relative"
+      className="
+      bg-neutral-50
+      h-fit
+      2xl:h-screen
+      xl:h-fit
+      flex
+      flex-col
+      px-5
+      2xl:px-60
+      xl:px-14
+      py-28
+      2xl:py-40
+      xl:py-30
+      items-center
+      justify-center
+      relative
+      "
       style={{
         backgroundImage: "radial-gradient(#CCCCCC 1px, transparent 1px)",
         backgroundSize: "20px 20px",
@@ -51,7 +67,18 @@ export default function Skill() {
           </div>
           <TextHeadingLarge text="What Can I Do" />
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-3 lg:gap-y-0 gap-x-3 lg:gap-x-24 z-10">
+        <div className="
+        grid
+        grid-cols-2
+        2xl:grid-cols-4
+        xl:grid-cols-4
+        gap-y-3
+        2xl:gap-y-0
+        xl:gap-y-0
+        gap-x-3
+        2xl:gap-x-24
+        xl:gap-x-16
+        z-10">
           {skillsData.map((skill, index) => (
             <div key={index}>
               <DefaultCard
@@ -61,7 +88,7 @@ export default function Skill() {
                 icon={skill.icon}
                 description={skill.description}
                 label={skill.label}
-                className="lg:h-560 text-balance"
+                className="2xl:h-560 xl:h-560 text-balance"
                 image={skill.image}
                 onClick={() => openModal(skill.label, skill.description)}
               />
@@ -78,7 +105,7 @@ export default function Skill() {
         <BodyMedium
           text={modalContent.description}
           color="text-neutral-500"
-          className="mb-3 leading-relaxed lg:font-normal"
+          className="mb-3 leading-relaxed 2xl:font-normal lg:font-normal"
         />
       </ModalSkill>
     </section>

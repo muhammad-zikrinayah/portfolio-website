@@ -20,8 +20,8 @@ const iconPacks = {
 
 export function DefaultCard({
   image,
-  paddingX = "px-16 lg:px-24",
-  paddingY = "py-16 lg:py-24",
+  paddingX = "px-16 2xl:px-24",
+  paddingY = "py-16 2xl:py-24",
   icon = "fa-FaQuestion",
   iconSize = "32",
   label = "Label",
@@ -54,7 +54,14 @@ export function DefaultCard({
     >
       <img
         src={image}
-        className=" size-40 lg:size-60 object-cover rounded-2xl self-center"
+        className="
+        size-40
+        2xl:size-60
+        xl:size-60
+        object-cover
+        rounded-2xl
+        self-center
+        "
       />
       <SelectedIcon size={`${iconSize}px`} className={`${iconColor}`} />
       <div className="flex flex-col gap-y-3">
@@ -72,8 +79,8 @@ export function DefaultCard({
         onClick={onClick}
         labelColor="text-neutral-500 hover:text-primary-container"
         iconColor="text-neutral-500"
-        backgroundColor="bg-neutral-50"
-        backgroundHover="bg-neutral-50"
+        backgroundColor="bg-white"
+        backgroundHover="bg-white"
         className="cursor-pointer w-fit"
         labelStyle="underline"
       />
@@ -131,8 +138,8 @@ export function SocialCard({
           label={buttonLabel}
           labelColor="text-neutral-500 hover:text-primary-container"
           iconColor="text-neutral-500"
-          backgroundColor="bg-neutral-50"
-          backgroundHover="bg-neutral-50"
+          backgroundColor="bg-white"
+          backgroundHover="bg-white"
           className="cursor-pointer w-fit"
           labelStyle="underline"
         />
@@ -161,12 +168,23 @@ export function ProjectCard({
         flex flex-col
         rounded-lg
         justify-end
-        gap-y-16 lg:gap-y-5 ${className} ${paddingX} ${paddingY} ${gap}
+        gap-y-16
+        w-full
+        2xl:gap-y-5
+        xl:gap-y-5
+        ${className} ${paddingX} ${paddingY} ${gap}
       `}
     >
       <div className="flex flex-col items-start gap-y-3">
         <img
-          className="w-full h-60 lg:h-80 rounded-sm object-cover"
+          className="
+          w-full
+          h-60
+          2xl:h-80
+          xl:h-70
+          rounded-sm
+          object-cover
+          "
           src={img}
         />
         <LabelStyle text={label} color="text-primary-main" />

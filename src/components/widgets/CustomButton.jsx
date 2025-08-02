@@ -33,7 +33,13 @@ export function IconButton({
   return (
     <button
       type="button"
-      className={`${backgroundColor} ${iconColor} p-5 lg:p-24 rounded-lg lg:rounded-xl ${backgroundHover} ${iconHover} cursor-pointer`}
+      className={`${backgroundColor} ${iconColor} p-5 
+        2xl:p-24
+        xl:p-24
+        2xl:rounded-xl
+        xl:rounded-xl
+        rounded-lg 
+        ${backgroundHover} ${iconHover} cursor-pointer`}
     >
       <SelectedIcon size={`${iconSize}px`} />
     </button>

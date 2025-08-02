@@ -13,6 +13,51 @@ const commonData = {
       to detail and aesthetics in visual design.
     </>
   ),
+  homeDesc: (
+    <>
+      Creating aesthetic and functional digital experiences.{" "}
+      <span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>
+        UI/UX Designer
+      </span>{" "}
+      and{" "}
+      <span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>
+        Front-End Developer
+      </span>{" "}
+      who applies visual acuity in every design and code. Providing a touch of{" "}
+      <span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>
+        photography
+      </span>{" "}
+      as visual content.
+    </>
+  ),
+
+  galleryDesc: (
+    <>
+      You can see more photos on my{" "}
+      <span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>
+        <a
+          href="https://www.instagram.com/evelynia._"
+          className="cursor-pointer hover:text-primary-hover"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          photography
+        </a>
+      </span>{" "}
+      or{" "}
+      <span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>
+        <a
+          href="https://www.instagram.com/itszykx_"
+          className="cursor-pointer hover:text-primary-hover"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          personal
+        </a>
+      </span>{" "}
+      Instagram account.
+    </>
+  ),
 };
 
-export default commonData
+export default commonData;

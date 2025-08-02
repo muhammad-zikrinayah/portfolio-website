@@ -32,6 +32,7 @@ const designProjects = [
     img: IMAGES.flory,
     link: "https://dribbble.com/shots/26158941-Social-Media-App-for-Plant-Lovers",
   },
+  
 ];
 
 const appProjects = [];

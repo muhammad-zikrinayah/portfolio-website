@@ -127,10 +127,34 @@ export function DefaultForm({}) {
               placeholder="Write your thoughts here..."
               value={message}
               onChange={handleMessageChange}
-              className="resize-none p-16 overflow-y-auto max-h-60 h-60 min-h-60 lg:max-h-72 lg:h-72 lg:min-h-72 mt-3 w-full text-neutral-600 rounded-lg font-semibold text-sm placeholder:text-neutral-400 placeholder:font-normal bg-white focus:outline-primary-main outline-1 outline-neutral-200"
+              className="
+              resize-none
+              p-16
+              overflow-y-auto
+              max-h-60
+              h-60
+              min-h-60
+              2xl:max-h-72
+              xl:max-h-55
+              2xl:h-72
+              xl:h-55
+              2xl:min-h-72
+              xl:min-h-55
+              mt-3
+              w-full
+              text-neutral-600
+              rounded-lg
+              font-semibold
+              text-sm
+              placeholder:text-neutral-400
+              placeholder:font-normal
+              bg-white
+              focus:outline-primary-main
+              outline-1
+              outline-neutral-200"
               required
             />
-            <div className="absolute bottom-16 right-16 text-xs lg:text-sm font-semibold lg:font-normal text-neutral-500">
+            <div className="absolute bottom-16 right-16 text-xs 2xl:text-sm font-semibold 2xl:font-normal text-neutral-500">
               <span>{message.length}</span> / <span>{maxLength}</span>
             </div>
           </div>
@@ -138,10 +162,39 @@ export function DefaultForm({}) {
             <p className="mt-2 text-sm text-danger-main">{errors.message}</p>
           )}
         </div>
-        <div className="flex flex-col lg:flex-row w-full lg:gap-x-3 gap-y-3 lg:gap-y-0 items-center">
+        <div className="
+        flex
+        flex-col
+        2xl:flex-row
+        xl:flex-row
+        w-full
+        2xl:gap-x-3
+        xl:gap-x-3
+        gap-y-3
+        2xl:gap-y-0
+        xl:gap-y-0
+        items-center
+        ">
           <button
             type="submit"
-            className="px-32 py-16 justify-center flex rounded-lg lg:rounded-xl w-full lg:w-fit font-semibold text-l bg-primary-main hover:bg-primary-hover text-neutral-50 cursor-pointer"
+            className="
+            px-32
+            py-16
+            justify-center
+            flex
+            rounded-lg
+            2xl:rounded-xl
+            xl:rounded-xl
+            w-full
+            2xl:w-fit
+            xl:w-fit
+            font-semibold
+            text-l
+            bg-primary-main
+            hover:bg-primary-hover
+            text-neutral-50
+            cursor-pointer
+            "
           >
             Submit
           </button>

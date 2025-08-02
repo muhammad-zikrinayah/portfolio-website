@@ -114,7 +114,31 @@ export default function About() {
     <section
       data-scroll-section
       id="about"
-      className="bg-neutral-50 h-fit lg:h-screen flex flex-col-reverse lg:flex-row px-5 lg:px-60 py-40 lg:py-0 lg:gap-x-20 lg:gap-y-0 gap-y-64 justify-center lg:justify-between items-center"
+      className="
+      bg-neutral-50
+      h-fit
+      2xl:h-screen
+      xl:h-screen
+      flex
+      flex-col-reverse
+      2xl:flex-row
+      xl:flex-row
+      px-5
+      2xl:px-60
+      xl:px-14
+      py-40
+      2xl:py-0
+      xl:py-0
+      2xl:gap-x-20
+      xl:gap-x-20
+      2xl:gap-y-0
+      xl:gap-y-0
+      gap-y-64
+      justify-center
+      2xl:justify-between
+      xl:justify-between
+      items-center
+      "
     >
       <div
         className="flex flex-col gap-y-24 items-start w-full z-10"
@@ -161,13 +185,27 @@ export default function About() {
       </div>
 
       <div
-        className="w-full h-80 lg:h-full flex items-center lg:justify-end justify-center relative z-10"
+        className="
+        w-full h-80
+        2xl:h-full
+        xl:h-full
+        flex
+        items-center
+        2xl:justify-end
+        xl:justify-end
+        justify-center
+        relative
+        z-10
+        "
         data-scroll
         data-scroll-speed="0.3"
       >
-        <div className="size-80 lg:size-560 bg-primary-surface rounded-3xl -rotate-12 absolute"></div>
-        <div className="size-80 lg:size-560 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
-        <div className="size-80 lg:size-560 bg-primary-container rounded-3xl absolute">
+        <div className="realtive">
+          
+        </div>
+        <div className="size-80 2xl:size-560 xl:size-120 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
+        <div className="size-80 2xl:size-560 xl:size-120 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
+        <div className="size-80 2xl:size-560 xl:size-120 bg-primary-container rounded-3xl absolute">
           <img
             className=" brightness-115 saturate-95 contrast-95 rounded-3xl border-2 border-primary-main"
             src={IMAGES.profileAbout}

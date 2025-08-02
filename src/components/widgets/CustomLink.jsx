@@ -1,7 +1,7 @@
 export function LinkSemiBold({
   href,
   text,
-  color = "text-neutral-600 lg:text-neutral-500",
+  color = "text-neutral-600 2xl:text-neutral-500 xl:text-neutral-500",
   hover = "hover:text-primary-main",
   onClick,
 }) {

@@ -12,7 +12,28 @@ export default function Contact() {
     <section
       data-scroll-section
       id="contact"
-      className="bg-neutral-50 h-fit flex flex-col px-5 lg:px-60 justify-center gap-y-3 lg:gap-y-9 items-start pt-28 lg:pt-28 pb-24 lg:pb-36 lg:py-28"
+      className="
+      bg-neutral-50
+      h-fit
+      flex 
+      flex-col
+      px-5
+      2xl:px-60
+      xl:px-14
+      justify-center
+      gap-y-3
+      2xl:gap-y-9
+      xl:gap-y-9
+      items-start
+      pt-28
+      2xl:pt-28
+      xl:pt-28
+      pb-24
+      2xl:pb-36
+      xl:pb-36
+      2xl:py-28
+      xl:py-28
+      "
     >
       <div
         className="flex flex-col gap-y-3 items-start"
@@ -26,9 +47,31 @@ export default function Contact() {
         <TextHeadingLarge text="Lets Collaborate" />
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row w-full h-fit justify-between gap-y-24 lg:gap-y-0 lg:gap-x-64">
+      <div className="
+      flex
+      flex-col-reverse
+      2xl:flex-row
+      xl:flex-row
+      w-full
+      h-fit
+      justify-between
+      gap-y-24
+      2xl:gap-y-0
+      xl:gap-y-0
+      2xl:gap-x-64
+      xl:gap-x-64
+      ">
         <DefaultForm />
-        <div className="flex flex-col h-full lg:w-2/5 gap-y-3 lg:gap-y-20">
+        <div className="
+        flex
+        flex-col
+        h-full
+        2xl:w-2/5
+        xl:w-3/5
+        gap-y-3
+        2xl:gap-y-20
+        xl:gap-y-16
+        ">
           <div>
             <a
               href="https://www.instagram.com/zikri_ui"
