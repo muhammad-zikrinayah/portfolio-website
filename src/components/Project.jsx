@@ -222,6 +222,7 @@ export default function Projects() {
 
         <a href={modalContent.link} target="_blank" rel="noopener noreferrer">
           <DefaultButton
+            style={{ touchAction: "auto" }}
             textcomponent={BodyMedium}
             label="View Detail"
             labelColor="text-neutral-50"

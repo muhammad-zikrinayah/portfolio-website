@@ -47,6 +47,7 @@ export function IconButton({
 }
 
 export function DefaultButton({
+  style,
   paddingX = "px-0",
   paddingY = "py-0",
   iconLeft = "fa-FaQuestion",
@@ -64,7 +65,7 @@ export function DefaultButton({
   iconHover = "hover:text-primary-main",
   gap = "gap-x-2",
   className = "",
-  onClick= () => {},
+  onClick = () => {},
 }) {
   let LICon = null;
   let RICon = null;
@@ -82,6 +83,7 @@ export function DefaultButton({
 
   return (
     <button
+      style={style}
       onClick={onClick}
       type="button"
       className={`
