@@ -1,49 +1,24 @@
 import { useState } from "react";
 import IMAGES from "../data/images";
+import { educationData, experienceData, toolsData } from "../data/abouData";
 import {
   BodyMedium,
   BodyNormal,
   SubtitleBold,
   TextHeadingLarge,
 } from "./widgets/CustomText";
-import { TabsButton } from "./widgets/CustomButton";
+import { DefaultButton, TabsButton } from "./widgets/CustomButton";
 import CustomIcons from "./widgets/CustomIcons";
 import commonData from "../data/stringData";
 
 const tabs = [
   { id: "education", label: "Education", icon: "lu-LuGraduationCap" },
   { id: "experience", label: "Experience", icon: "pi-PiSuitcase" },
+  { id: "tools", label: "Tools & Software", icon: "lia-LiaToolsSolid" },
 ];
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("education");
-
-  const educationData = [
-    {
-      year: "2025 - Present",
-      title: "Universitas Bumigora",
-      description: "Software Engineering",
-    },
-    {
-      year: "2022 - 2025",
-      title: "SMK Raden Umar Said Kudus",
-      description: "Software Engineering",
-    },
-  ];
-
-  const experienceData = [
-    {
-      year: "2024 - Present",
-      title: "Wellmagic Media Digital",
-      description: "Front-End Developer, UI Designer",
-    },
-    {
-      year: "2023 - 2024",
-      title: "SMK Raden Umar Said Kudus",
-      description:
-        "Final Project: E-Commerce Application Development, UI/UX Designer, Team Manager & Front-End Developer",
-    },
-  ];
 
   const renderTab = () => {
     switch (activeTab) {
@@ -54,7 +29,7 @@ export default function About() {
               <div key={index} className="relative flex">
                 <div className="relative">
                   {index < educationData.length - 1 && (
-                    <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
+                    <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
                   )}
                   <div className="relative z-10 rounded-full flex items-center justify-center bg-neutral-50">
                     <CustomIcons
@@ -83,7 +58,7 @@ export default function About() {
                 <div key={index} className="relative flex">
                   <div className="relative">
                     {index < experienceData.length - 1 && (
-                      <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
+                      <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
                     )}
                     <div className="relative z-10 rounded-full flex items-center justify-center bg-neutral-50">
                       <CustomIcons
@@ -100,6 +75,30 @@ export default function About() {
                       color="text-neutral-400"
                     />
                   </div>
+                </div>
+              ))}
+            </div>
+          </>
+        );
+
+      case "tools":
+        return (
+          <>
+            <div className="flex flex-row w-full relative gap-2 flex-wrap 2xl:pb-7 xl:pb-16">
+              {toolsData.map((item, index) => (
+                <div key={index} className="relative flex">
+                  <DefaultButton
+                    showIconLeft
+                    iconLeft={item.icon}
+                    paddingX="px-16"
+                    paddingY="py-3"
+                    iconSize="20"
+                    textcomponent={BodyMedium}
+                    label={item.title}
+                    className="cursor-auto align-middle items-center justify-center"
+                    backgroundColor="bg-primary-surface"
+                    backgroundHover="hover:bg-primary-surface"
+                  />
                 </div>
               ))}
             </div>
@@ -131,8 +130,6 @@ export default function About() {
       xl:py-0
       2xl:gap-x-20
       xl:gap-x-20
-      2xl:gap-y-0
-      xl:gap-y-0
       gap-y-64
       justify-center
       2xl:justify-between
@@ -198,11 +195,9 @@ export default function About() {
         z-10
         "
         data-scroll
-        data-scroll-speed="0.3"
+        data-scroll-speed="0.2"
       >
-        <div className="realtive">
-          
-        </div>
+        <div className="realtive"></div>
         <div className="size-80 2xl:size-120 xl:size-120 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
         <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
         <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl absolute">

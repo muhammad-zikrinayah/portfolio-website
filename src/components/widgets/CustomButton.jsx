@@ -6,6 +6,11 @@ import * as LuIcons from "react-icons/lu";
 import * as GoIcons from "react-icons/go";
 import * as IoIcons from "react-icons/io5";
 import * as PiIcons from "react-icons/pi";
+import * as  VscIcons from "react-icons/vsc";
+import * as TbIcons from "react-icons/tb";
+import * as LiaIcons from "react-icons/lia";
+import * as SiIcons from "react-icons/si";
+import * as RiIcons from "react-icons/ri";
 
 const iconPacks = {
   fa: FaIcons,
@@ -16,6 +21,11 @@ const iconPacks = {
   go: GoIcons,
   io: IoIcons,
   pi: PiIcons,
+  vsc: VscIcons,
+  tb: TbIcons,
+  lia: LiaIcons,
+  si: SiIcons,
+  ri: RiIcons,
 };
 
 export function IconButton({
