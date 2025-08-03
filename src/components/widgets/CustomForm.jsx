@@ -6,7 +6,7 @@ export function DefaultForm({}) {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState({});
-  const maxLength = 512;
+  const maxLength = 1024;
 
   const form = useRef();
 
