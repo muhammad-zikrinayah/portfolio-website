@@ -118,7 +118,9 @@ export default function Home() {
             className="
             text-center
             2xl:text-start
+            2xl:leading-7
             xl:text-start
+            xl:leading-7
             "
           />
           <a href="#about">
@@ -146,7 +148,7 @@ export default function Home() {
           className="
         relative
         size-80
-        2xl:size-560
+        2xl:size-130
         xl:size-120
         rounded-full
         bg-gradient-to-b

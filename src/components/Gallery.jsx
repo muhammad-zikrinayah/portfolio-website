@@ -10,16 +10,13 @@ export default function Gallery() {
     ...(data.first || []),
     ...(data.first || []),
     ...(data.first || []),
-    ...(data.first || []),
   ];
   const loopedDataSecond = [
     ...(data.second || []),
     ...(data.second || []),
     ...(data.second || []),
-    ...(data.second || []),
   ];
   const loopedDataThird = [
-    ...(data.third || []),
     ...(data.third || []),
     ...(data.third || []),
     ...(data.third || []),
@@ -35,12 +32,12 @@ export default function Gallery() {
       w-full
       flex
       flex-col
-      py-24
+      py-40
       2xl:py-128
       xl:py-18
       justify-center
       items-center
-      gap-y-7
+      gap-y-24
       "
     >
       <div

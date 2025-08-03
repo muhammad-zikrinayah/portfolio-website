@@ -145,7 +145,7 @@ export default function Projects() {
     <section
       data-scroll-section
       id="project"
-      className="*
+      className="
       bg-neutral-50
       h-fit
       flex

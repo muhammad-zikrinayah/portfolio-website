@@ -58,7 +58,7 @@ export function DefaultCard({
         size-40
         2xl:size-60
         xl:size-60
-        object-cover
+        object-contain
         rounded-2xl
         self-center
         "

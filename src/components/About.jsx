@@ -156,7 +156,7 @@ export default function About() {
           <BodyNormal
             text={commonData.aboutDesc}
             color="text-neutral-500"
-            className="text-justify leading-relaxed "
+            className="text-justify leading-relaxed 2xl:leading-7 xl:leading-7"
           />
           <div className="flex gap-x-5">
             {tabs.map((tab) => (
