@@ -59,7 +59,7 @@ export const toolsData = [
     title: "Tailwind CSS",
   },
   {
-    icon: "si-SiVitest",
+    icon: "si-SiVite",
     title: "Vite",
   },
   {
