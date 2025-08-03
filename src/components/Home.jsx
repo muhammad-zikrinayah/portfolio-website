@@ -15,27 +15,34 @@ export default function Home() {
     <section
       data-scroll-section
       id="home"
-      className="bg-neutral-50
+      className="
+      bg-neutral-50
+      justify-center
+      items-center
+      relative
+      overflow-hidden
+
       h-fit
       2xl:h-screen
       xl:h-screen
       flex
+
       flex-col-reverse
+      2xl:flex-row
+      xl:flex-row
+
       gap-y-14
       2xl:gap-y-0
       xl:gap-y-0
-      2xl:flex-row
-      xl:flex-row
+
       px-5
       2xl:px-60
       xl:px-14
+
       py-28
       2xl:py-0
       xl:py-0
-      justify-center
-      items-center
-      relative
-      overflow-hidden"
+      "
     >
       <div
         className="absolute inset-0 z-0"
@@ -54,16 +61,19 @@ export default function Home() {
 
       <div
         className="
+        w-full
+        z-10
         flex
         flex-col
-        2xl:pr-128
-        xl:pr-15
         gap-y-24
+
         items-center
         2xl:items-start
         xl:items-start
-        w-full
-        z-10"
+
+        2xl:pr-128
+        xl:pr-15
+        "
         data-scroll
         data-scroll-speed="-0.1"
       >
@@ -72,11 +82,12 @@ export default function Home() {
           flex
           flex-col
           gap-y-16
+          w-full
+
           items-center
           2xl:items-start
           xl:items-start
-          justify-items-start
-          w-full
+          
           pt-14
           2xl:pt-0
           xl:pt-0
@@ -87,6 +98,7 @@ export default function Home() {
           flex
           flex-col
           gap-y-3
+
           items-center
           2xl:items-start
           xl:items-start
@@ -103,6 +115,7 @@ export default function Home() {
             gap-x-16
             align-middle
             items-center
+
             pl-3
             2xl:pl-0
             xl:pl-0
@@ -117,9 +130,11 @@ export default function Home() {
             color="text-neutral-500"
             className="
             text-center
+
             2xl:text-start
-            2xl:leading-7
             xl:text-start
+
+            2xl:leading-7
             xl:leading-7
             "
           />
@@ -147,15 +162,17 @@ export default function Home() {
         <div
           className="
         relative
+        rounded-full
+
+        bg-gradient-to-b
+        from-primary-gradient
+        to-neutral-50
+        from-0%
+        to-80%
+
         size-80
         2xl:size-130
         xl:size-120
-        rounded-full
-        bg-gradient-to-b
-        from-primary-gradient
-        from-0%
-        to-neutral-50
-        to-80%
         "
         >
           <div className="w-full items-center flex flex-col mt-7">
@@ -176,23 +193,29 @@ export default function Home() {
 
       <div
         className="
+        w-2/6
+        z-10
         flex
+        
         flex-row
         2xl:flex-col
         xl:flex-col
+
         gap-x-5
         2xl:gap-x-0
         xl:gap-x-0
+
         2xl:gap-y-24
         xl:gap-y-24
+
         items-center
         2xl:items-end
         xl:items-end
-        w-2/6
+        
         justify-center
         2xl:justify-around
         xl:justify-around
-        z-10
+        
         "
         data-scroll
         data-scroll-speed="0.15"
