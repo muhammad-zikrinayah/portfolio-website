@@ -29,7 +29,7 @@ export default function About() {
               <div key={index} className="relative flex">
                 <div className="relative">
                   {index < educationData.length - 1 && (
-                    <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
+                    <div className="absolute left-1/2 right-1/2 top-7 bottom-6 w-[2px] bg-neutral-300"></div>
                   )}
                   <div className="relative z-10 rounded-full flex items-center justify-center bg-neutral-50">
                     <CustomIcons
@@ -58,7 +58,7 @@ export default function About() {
                 <div key={index} className="relative flex">
                   <div className="relative">
                     {index < experienceData.length - 1 && (
-                      <div className="absolute left-1/2 right-1/2 top-7 bottom-6  w-[2px] bg-neutral-300"></div>
+                      <div className="absolute left-1/2 right-1/2 top-7 bottom-6 w-[2px] bg-neutral-300"></div>
                     )}
                     <div className="relative z-10 rounded-full flex items-center justify-center bg-neutral-50">
                       <CustomIcons
