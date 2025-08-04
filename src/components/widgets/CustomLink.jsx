@@ -10,7 +10,7 @@ export function LinkSemiBold({
     <a
     onClick={onClick}
       href={href}
-      className={`${color} font-bold text-xl ${hover} cursor-pointer`}
+      className={`${color} font-bold text-md ${hover} cursor-pointer`}
     >
       {text}
     </a>

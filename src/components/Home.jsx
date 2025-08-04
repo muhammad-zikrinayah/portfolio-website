@@ -171,8 +171,8 @@ export default function Home() {
         to-80%
 
         size-80
-        2xl:size-130
-        xl:size-120
+        2xl:size-120
+        xl:size-100
         "
         >
           <div className="w-full items-center flex flex-col mt-7">

@@ -198,9 +198,9 @@ export default function About() {
         data-scroll-speed="0.2"
       >
         <div className="realtive"></div>
-        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
-        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
-        <div className="size-80 2xl:size-120 xl:size-120 bg-primary-container rounded-3xl absolute">
+        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
+        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
+        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-container rounded-3xl absolute">
           <img
             className=" brightness-115 saturate-95 contrast-95 rounded-3xl border-2 border-primary-main"
             src={IMAGES.profileAbout}

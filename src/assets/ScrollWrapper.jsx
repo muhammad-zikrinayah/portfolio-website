@@ -39,7 +39,7 @@ const ScrollWrapper = ({ children }) => {
         multiplier: isMobile ? 0.5 : 1,
       });
 
-      return () => {
+      return () => { 
         if (scroll) scroll.destroy();
       };
     }

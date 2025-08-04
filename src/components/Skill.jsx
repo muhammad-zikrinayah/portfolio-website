@@ -88,7 +88,7 @@ export default function Skill() {
                 icon={skill.icon}
                 description={skill.description}
                 label={skill.label}
-                className="2xl:h-560 xl:h-560 text-balance"
+                className="2xl:h-130 xl:h-560 text-balance"
                 image={skill.image}
                 onClick={() => openModal(skill.label, skill.description)}
               />
