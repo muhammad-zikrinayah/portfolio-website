@@ -27,7 +27,7 @@ export const experienceData = [
 
 export const toolsData = [
   {
-    icon: "fa-FaFigma",
+    icon: "si-SiFigma",
     title: "Figma",
   },
   {
@@ -39,11 +39,11 @@ export const toolsData = [
     title: "Visual Studio Code",
   },
   {
-    icon: "fa-FaHtml5",
+    icon: "si-SiHtml5",
     title: "HTML",
   },
   {
-    icon: "fa-FaCss3Alt",
+    icon: "si-SiCss3",
     title: "CSS",
   },
   {
@@ -51,7 +51,7 @@ export const toolsData = [
     title: "JavaScript",
   },
   {
-    icon: "fa-FaReact",
+    icon: "si-SiReact",
     title: "React",
   },
   {
@@ -63,15 +63,19 @@ export const toolsData = [
     title: "Vite",
   },
   {
-    icon: "fa-FaBootstrap",
+    icon: "si-SiBootstrap",
     title: "Bootstrap",
+  },
+  {
+    icon: "si-SiDart",
+    title: "Dart",
   },
   {
     icon: "si-SiFlutter",
     title: "Flutter",
   },
   {
-    icon: "fa-FaGithub",
+    icon: "si-SiGithub",
     title: "Github",
   },
 ];
