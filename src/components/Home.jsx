@@ -171,7 +171,7 @@ export default function Home() {
         to-80%
 
         size-80
-        2xl:size-120
+        2xl:size-110
         xl:size-100
         "
         >

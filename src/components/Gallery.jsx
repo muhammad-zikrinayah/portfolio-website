@@ -1,7 +1,11 @@
 import GalleryData from "../data/galleryData";
 import commonData from "../data/stringData";
 
-import { BodyNormal, SubtitleBold, TextHeadingLarge } from "./widgets/CustomText";
+import {
+  BodyNormal,
+  SubtitleBold,
+  TextHeadingLarge,
+} from "./widgets/CustomText";
 
 export default function Gallery() {
   const data = GalleryData || {};
@@ -52,23 +56,23 @@ export default function Gallery() {
         <TextHeadingLarge text="Photo collection" />
       </div>
       <div className="max-w-170 px-24 text-center">
-        <BodyNormal text={commonData.galleryDesc} color="text-neutral-600"/>
+        <BodyNormal text={commonData.galleryDesc} color="text-neutral-600" />
       </div>
-      <div className="relative w-full overflow-hidden flex flex-col gap-y-16">
+      <div className="relative w-full overflow-hidden flex flex-col gap-y-12 2xl:gap-y-16 xl:gap-y-16">
         <div className="absolute inset-y-0 left-0 w-240 bg-gradient-to-r from-neutral-50 from-2% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
         <div className="absolute inset-y-0 right-0 w-240 bg-gradient-to-l from-neutral-50 from-2% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
 
-        <div className="w-full flex flex-row space-x-3 animate-[loop-scroll-left_120s_linear_infinite]">
+        <div className="w-full flex flex-row space-x-2 2xl:space-x-3 xl:space-x-3 animate-[loop-scroll-left_120s_linear_infinite]">
           {loopedDataFirst.map((item, index) => (
             <div key={`first-row-${index}`} className="flex-shrink-0">
               <img
                 src={item.img}
                 className="
-                h-32
+                h-30
                 2xl:h-48
                 xl:h-45
                 rounded-xl
-                w-60
+                w-50
                 2xl:w-80
                 xl:w-75
                 object-cover
@@ -86,11 +90,11 @@ export default function Gallery() {
               <img
                 src={item.img}
                 className="
-                h-32
+                h-30
                 2xl:h-48
                 xl:h-45
                 rounded-xl
-                w-60
+                w-50
                 2xl:w-80
                 xl:w-75
                 object-cover
@@ -108,11 +112,11 @@ export default function Gallery() {
               <img
                 src={item.img}
                 className="
-                h-32
+                h-30
                 2xl:h-48
                 xl:h-45
                 rounded-xl
-                w-60
+                w-50
                 2xl:w-80
                 xl:w-75
                 object-cover

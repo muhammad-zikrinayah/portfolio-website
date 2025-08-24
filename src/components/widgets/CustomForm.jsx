@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { BodyNormal } from "./CustomText";
+import commonData from "../../data/stringData";
+import { BodyNormal, BodySmallNormal } from "./CustomText";
 
 export function DefaultForm({}) {
   const [message, setMessage] = useState("");
@@ -111,14 +112,14 @@ export function DefaultForm({}) {
           )}
         </div>
 
-        <div className="mb-16">
+        <div className="mb-8">
           <label
             htmlFor="message"
             className="font-semibold text-lg text-neutral-700"
           >
             Message
           </label>
-          <div className="relative mb-16">
+          <div className="relative mb-8">
             <textarea
               rows="4"
               id="message"
@@ -162,7 +163,9 @@ export function DefaultForm({}) {
             <p className="mt-2 text-sm text-danger-main">{errors.message}</p>
           )}
         </div>
-        <div className="
+        <BodySmallNormal text={commonData.messageNote} color="text-neutral-400" className="relative mb-8 italic"/>
+        <div
+          className="
         flex
         flex-col
         2xl:flex-row
@@ -174,7 +177,8 @@ export function DefaultForm({}) {
         2xl:gap-y-0
         xl:gap-y-0
         items-center
-        ">
+        "
+        >
           <button
             type="submit"
             className="

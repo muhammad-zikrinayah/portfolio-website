@@ -58,6 +58,12 @@ const commonData = {
       Instagram account.
     </>
   ),
+
+  messageNote: (
+    <>
+    Note: This message will be sent to my email address{" "}<span style={{ color: "oklch(0.627 0.0988 67.26)", fontWeight: "700" }}>zikrinaya05@gmail.com</span>
+    </>
+  )
 };
 
 export default commonData;

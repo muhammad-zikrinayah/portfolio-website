@@ -128,7 +128,7 @@ export default function About() {
       py-40
       2xl:py-0
       xl:py-0
-      2xl:gap-x-20
+      2xl:gap-x-0
       xl:gap-x-20
       gap-y-64
       justify-center
@@ -184,6 +184,7 @@ export default function About() {
       <div
         className="
         w-full h-80
+        2xl:w-5/6
         2xl:h-full
         xl:h-full
         flex
@@ -197,10 +198,10 @@ export default function About() {
         data-scroll
         data-scroll-speed="0.2"
       >
-        <div className="realtive"></div>
-        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
-        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
-        <div className="size-80 2xl:size-120 xl:size-110 bg-primary-container rounded-3xl absolute">
+        <div className="relative"></div>
+        <div className="size-80 2xl:size-110 xl:size-100 bg-primary-surface rounded-3xl -rotate-10 absolute"></div>
+        <div className="size-80 2xl:size-110 xl:size-100 bg-primary-container rounded-3xl -rotate-5 absolute"></div>
+        <div className="size-80 2xl:size-110 xl:size-100 bg-primary-container rounded-3xl absolute">
           <img
             className=" brightness-115 saturate-95 contrast-95 rounded-3xl border-2 border-primary-main"
             src={IMAGES.profileAbout}

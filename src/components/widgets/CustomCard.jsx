@@ -180,8 +180,8 @@ export function ProjectCard({
           className="
           w-full
           h-60
-          2xl:h-80
-          xl:h-70
+          2xl:h-70
+          xl:h-60
           rounded-sm
           object-cover
           "
