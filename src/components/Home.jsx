@@ -122,7 +122,7 @@ export default function Home() {
             "
             >
               <TextHeadingLarge text="Hello Everyone" />
-              <CustomIcons icon="md-MdOutlineWavingHand" iconSize="32" />
+              <CustomIcons icon="md-MdOutlineWavingHand" iconSize="32" containerStyle={"animate-[wave-hand_2s_infinite]"} />
             </div>
           </div>
           <BodyNormal

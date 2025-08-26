@@ -49,7 +49,7 @@ export function IconButton({
         2xl:rounded-xl
         xl:rounded-xl
         rounded-lg 
-        ${backgroundHover} ${iconHover} cursor-pointer`}
+        ${backgroundHover} ${iconHover} cursor-pointer transition-colors duration-300`}
     >
       <SelectedIcon size={`${iconSize}px`} />
     </button>
@@ -161,6 +161,7 @@ export function TabsButton({
       className={`
         flex items-end
         ${backgroundColor} ${backgroundHover} ${className} ${paddingX} ${paddingY} ${gap} ${cornerRadius}
+        transition-colors duration-300
       `}
     >
       {showIconLeft && LICon && (
