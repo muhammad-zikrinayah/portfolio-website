@@ -59,8 +59,8 @@ export default function Gallery() {
         <BodyNormal text={commonData.galleryDesc} color="text-neutral-600" />
       </div>
       <div className="relative w-full overflow-hidden flex flex-col gap-y-12 2xl:gap-y-16 xl:gap-y-16">
-        <div className="absolute inset-y-0 left-0 w-240 bg-gradient-to-r from-neutral-50 from-2% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
-        <div className="absolute inset-y-0 right-0 w-240 bg-gradient-to-l from-neutral-50 from-2% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
+        <div className="absolute inset-y-0 left-0 w-240 bg-gradient-to-r from-neutral-50 from-1% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
+        <div className="absolute inset-y-0 right-0 w-240 bg-gradient-to-l from-neutral-50 from-1% to-transparent 2xl:to-50% lg:to-30% to-8% z-10"></div>
 
         <div className="w-full flex flex-row space-x-2 2xl:space-x-3 xl:space-x-3 animate-[loop-scroll-left_120s_linear_infinite]">
           {loopedDataFirst.map((item, index) => (

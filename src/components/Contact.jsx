@@ -73,11 +73,6 @@ export default function Contact() {
         xl:gap-y-16
         ">
           <div>
-            <a
-              href="https://www.instagram.com/zikri_ui"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
             <SocialCard
               labelstyle={TextHeadingSmall}
               descriptionstyle={BodyNormal}
