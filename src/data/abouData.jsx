@@ -47,10 +47,6 @@ export const toolsData = [
     title: "CSS",
   },
   {
-    icon: "si-SiJavascript",
-    title: "JavaScript",
-  },
-  {
     icon: "si-SiReact",
     title: "React",
   },
