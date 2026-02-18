@@ -14,7 +14,6 @@ import IMAGES from "../data/images";
 import { ModalProject } from "./widgets/Modal";
 
 const tabs = [
-  { id: "all", label: "All" },
   { id: "design", label: "Design" },
   { id: "web", label: "Web" },
   { id: "app", label: "App" },
@@ -44,48 +43,11 @@ export default function Projects() {
     });
   };
 
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState("design");
   const data = Project[activeTab] || [];
 
   const renderTab = () => {
     switch (activeTab) {
-      case "all":
-        return (
-          <div
-            className="
-          flex
-          flex-col
-          gap-y-24
-          2xl:gap-y-0
-          xl:gap-y-0
-          2xl:grid
-          xl:grid
-          2xl:grid-cols-3
-          xl:grid-cols-3
-          2xl:gap-9
-          xl:gap-24
-          items-start
-          w-full
-          "
-          >
-            {data.map((item) => (
-              <ProjectCard
-                key={item.id}
-                img={item.img}
-                paddingX="px-0"
-                paddingY="py-0"
-                label={item.label}
-                description={item.description}
-                labelstyle={SubtitleBold}
-                descriptionstyle={BodyNormal}
-                buttonLabel="Details"
-                onClick={() =>
-                  openModal(item.label, item.description, item.img, item.link)
-                }
-              />
-            ))}
-          </div>
-        );
       case "design":
         return (
           <div

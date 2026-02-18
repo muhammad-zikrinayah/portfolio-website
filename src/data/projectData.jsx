@@ -2,7 +2,7 @@ import IMAGES from "./images";
 
 const designProjects = [
   {
-    id: "d1",
+    id: "1",
     label: "Gowayysia",
     description:
       "Modern travel website UI design focused on showcasing the beauty of Southeast Asia 🌏🌿Designed to help users easily discover hidden gems, book destinations, and feel connected with nature and culture in one seamless experience.",
@@ -10,7 +10,7 @@ const designProjects = [
     link: "https://dribbble.com/shots/26266807-Gowayssia-Southeast-Asia-Travel-Website-UI",
   },
   {
-    id: "d2",
+    id: "2",
     label: "Social Media App for Plant Lovers",
     description: (
       <>
@@ -35,12 +35,10 @@ const designProjects = [
   
 ];
 
-const appProjects = [];
-
 const Project = {
   design: designProjects,
-  app: appProjects,
-  all: [...designProjects, ...appProjects],
+  // app: appProjects,
+  all: [...designProjects],
 };
 
 export default Project;
