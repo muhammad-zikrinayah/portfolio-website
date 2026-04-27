@@ -13,7 +13,12 @@ export const educationData = [
 
 export const experienceData = [
   {
-    year: "2024 - Present",
+    year: "2026 - Present",
+    title: "Full Code Studios",
+    description: "UI/UX Designer",
+  },
+  {
+    year: "2024 - 2026",
     title: "Wellmagic Media Digital",
     description: "Front-End Developer, UI Designer",
   },
